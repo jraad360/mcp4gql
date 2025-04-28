@@ -1,0 +1,24 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - graphqlEndpoint
+    properties:
+      graphqlEndpoint:
+        type: string
+        description: URL of the GraphQL endpoint
+      authToken:
+        type: string
+        default: ""
+        description: Bearer token for authentication
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['dist/server.js'], env: { GRAPHQL_ENDPOINT: config.graphqlEndpoint, AUTH_TOKEN: config.authToken } })
+  exampleConfig:
+    graphqlEndpoint: https://api.spacex.land/graphql/
+    authToken: my-secret-token
