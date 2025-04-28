@@ -1,7 +1,11 @@
 {
-  "name": "helm-mcp-server",
+  "name": "mcp4gql",
+  "author": "jorgeraad",
   "version": "1.0.0",
   "main": "dist/server.js",
+  "bin": {
+    "mcp4gql": "dist/server.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
@@ -9,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "description": "",
+  "description": "This project is a Node.js/TypeScript server that implements the Model Context Protocol (MCP). It acts as a bridge, allowing MCP clients (like Cursor) to interact with a target GraphQL API.",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.10.2",
     "axios": "^1.7.2",
@@ -25,5 +29,6 @@
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
-  }
+  },
+  "license": "MIT"
 }
