@@ -2,6 +2,8 @@
 
 [![smithery badge](https://smithery.ai/badge/@jorgeraad/mcp4gql)](https://smithery.ai/server/@jorgeraad/mcp4gql)
 
+![mcp4gql](./assets/mcp4gql.png)
+
 This project is a Node.js/TypeScript server that implements the Model Context Protocol (MCP). It acts as a bridge, allowing MCP clients (like Cursor) to interact with a target GraphQL API.
 
 ## Features
