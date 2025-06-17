@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/jorgeraad-mcp4gql-badge.png)](https://mseep.ai/app/jorgeraad-mcp4gql)
+
 # mcp4gql - GraphQL MCP Server
 
 [![smithery badge](https://smithery.ai/badge/@jorgeraad/mcp4gql)](https://smithery.ai/server/@jorgeraad/mcp4gql)
